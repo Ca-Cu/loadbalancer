@@ -163,98 +163,98 @@ public class App {
             res.status(200);
             res.type("application/json");
             changeServer();
-            Unirest.post(servers[nServer]+"/connect");
+            HttpResponse<String> apiresponse=Unirest.post(servers[nServer]+"/insertCancerDeCuelloUterino").body(req.body()).asString();
             return null;
         });
-        post("/insertCancerDeCuelloUterino", (req, res) -> {
+        post("/insertEspecialidad", (req, res) -> {
             res.status(200);
             res.type("application/json");
             changeServer();
-            Unirest.post(servers[nServer]+"/connect");
+            HttpResponse<String> apiresponse=Unirest.post(servers[nServer]+"/insertEspecialidad").body(req.body()).asString();
             return null;
         });
         post("/insertHistoriaSexual", (req, res) -> {
             res.status(200);
             res.type("application/json");
             changeServer();
-            Unirest.post(servers[nServer]+"/connect");
+            HttpResponse<String> apiresponse=Unirest.post(servers[nServer]+"/insertHistoriaSexual").body(req.body()).asString();
             return null;
         });
         post("/insertMedico", (req, res) -> {
             res.status(200);
             res.type("application/json");
             changeServer();
-            Unirest.post(servers[nServer]+"/connect");
+            HttpResponse<String> apiresponse=Unirest.post(servers[nServer]+"/insertMedico").body(req.body()).asString();
             return null;
         });
         post("/insertMetodoPlanificacion", (req, res) -> {
             res.status(200);
             res.type("application/json");
             changeServer();
-            Unirest.post(servers[nServer]+"/connect");
+            HttpResponse<String> apiresponse=Unirest.post(servers[nServer]+"/insertMetodoPlanificacion").body(req.body()).asString();
             return null;
         });
         post("/insertMetodoTamizacion", (req, res) -> {
             res.status(200);
             res.type("application/json");
             changeServer();
-            Unirest.post(servers[nServer]+"/connect");
+            HttpResponse<String> apiresponse=Unirest.post(servers[nServer]+"/insertMetodoTamizacion").body(req.body()).asString();
             return null;
         });
         post("/insertUsuario", (req, res) -> {
             res.status(200);
             res.type("application/json");
             changeServer();
-            Unirest.post(servers[nServer]+"/connect");
+            HttpResponse<String> apiresponse=Unirest.post(servers[nServer]+"/insertUsuario").body(req.body()).asString();
             return null;
         });
         post("/insertPatologia", (req, res) -> {
             res.status(200);
             res.type("application/json");
             changeServer();
-            Unirest.post(servers[nServer]+"/connect");
+            HttpResponse<String> apiresponse=Unirest.post(servers[nServer]+"/insertPatologia").body(req.body()).asString();
             return null;
         });
         post("/insertPatologiaPreinvasiva", (req, res) -> {
             res.status(200);
             res.type("application/json");
             changeServer();
-            Unirest.post(servers[nServer]+"/connect");
+            HttpResponse<String> apiresponse=Unirest.post(servers[nServer]+"/insertPatologiaPreinvasiva").body(req.body()).asString();
             return null;
         });
         post("/insertPrevencionPrimaria", (req, res) -> {
             res.status(200);
             res.type("application/json");
             changeServer();
-            Unirest.post(servers[nServer]+"/connect");
+            HttpResponse<String> apiresponse=Unirest.post(servers[nServer]+"/insertPrevencionPrimaria").body(req.body()).asString();
             return null;
         });
         post("/insertPrevencionSecundaria", (req, res) -> {
             res.status(200);
             res.type("application/json");
             changeServer();
-            Unirest.post(servers[nServer]+"/connect");
+            HttpResponse<String> apiresponse=Unirest.post(servers[nServer]+"/insertPrevencionSecundaria").body(req.body()).asString();
             return null;
         });
         post("/insertTipoPruebaVPH", (req, res) -> {
             res.status(200);
             res.type("application/json");
             changeServer();
-            Unirest.post(servers[nServer]+"/connect");
+            HttpResponse<String> apiresponse=Unirest.post(servers[nServer]+"/insertTipoPruebaVPH").body(req.body()).asString();
             return null;
         });
         post("/insertTipoVacunaVPH", (req, res) -> {
             res.status(200);
             res.type("application/json");
             changeServer();
-            Unirest.post(servers[nServer]+"/connect");
+            HttpResponse<String> apiresponse=Unirest.post(servers[nServer]+"/insertTipoVacunaVPH").body(req.body()).asString();
             return null;
         });
         put("/putHistoriaSexual", (req, res) -> {
             res.status(200);
             res.type("application/json");
             changeServer();
-            Unirest.put(servers[nServer]+"/connect");
+            HttpResponse<String> apiresponse=Unirest.put(servers[nServer]+"/putHistoriaSexual").body(req.body()).asString();
             return null;
         });
         post("/putUsuario", (req, res) -> {
@@ -262,7 +262,7 @@ public class App {
             res.status(200);
             res.type("application/json");
             changeServer();
-            Unirest.post(servers[nServer]+"/connect");
+            HttpResponse<String> apiresponse=Unirest.post(servers[nServer]+"/putUsuario").body(req.body()).asString();
             return null;
         });
     }
