@@ -6,9 +6,9 @@ import com.mashape.unirest.http.Unirest;
 import static spark.Spark.*;
 
 public class App {
-    private static String[] servers = {"http://ec2-35-174-167-194.compute-1.amazonaws.com/:4567","http://ec2-18-234-191-169.compute-1.amazonaws.com:4567"};
+    private static String[] servers = {"http://ec2-35-174-167-194.compute-1.amazonaws.com:4567","http://ec2-18-234-191-169.compute-1.amazonaws.com:4567"};
     private static int nServer=0;
-    
+
     public static void main(String args[]){
         port(getPort());
 
