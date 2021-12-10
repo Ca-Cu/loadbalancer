@@ -10,7 +10,6 @@ public class App {
     private static int nServer=0;
 
     public static void main(String args[]){
-        System.out.println(servers[nServer]);
         port(getPort());
 
         after("*", (req,res) ->{
